@@ -1,47 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="bumblebee">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link for external css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- link for fontawose -->
-    <script src="https://kit.fontawesome.com/3dce9717da.js" crossorigin="anonymous"></script>
-    <title>Todo List || Vivek Kumar </title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/style.css">
+  <!--Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> 
+
+    <title>Todo List | Saloni Jain</title>
 </head>
 <body>
+
+<!-- main todo container -->
     <div class="container">
-        <div class="todo-app">
-            <h2> <img src="image/todologo.avif" alt="todo-image"> Todo List </h2>
-            <div class="row">
-                <i class="fa-solid fa-list-check"></i>
-                <input type="text" class="add-task" id="add" placeholder="Add your todo">
-                <button id="btn">Add</button>
-            </div>
 
-            <div class="mid">
-                <i class="fa-solid fa-check-double"></i>
-                    <p id="complete-all">Complete all tasks </p>
-                    <p id="clear-all">Clear completed</p>
-            </div>
 
-            <ul id="list">
-            <!-- <li>
-                    <input type="checkbox" id="task1" data-id="12" class="custom-checkbox">
-                    <label for="task1">Buy groceries</label>
-                    <img src="bin.svg" class="delete" data-id="12" />
-            </li> -->
-            </ul>
+        
+
+        <!-- header that has input and add button -->
+        <header>
+            <h1>Todo List</h1>
+           
+            <div class="input-section">
+                <input id="todo-input" type="text" placeholder="Add a todo . . ." class="input w-full max-w-xs" />
+                <button id="add-button" class="btn btn-add ">
+                    <i class="bx bx-plus bx-sm"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- delete buttons -->
+
+        <div class="todos-filter">
             
+            <button id="delete-selected" class="btn btn-ghost delete-selected-btn">
+                Delete Selected
+            </button>
+            <button id="delete-all" class="btn btn-ghost delete-all-btn">
+                Delete All
+            </button>
+        </div>
+
+
+        <!-- this is the dynamic content which dds ups all the todos -->
+        <ul id="all-todos" class="todos-list">
+            
+        </ul>
+
+
         <!-- dropdown throgh which we can apply filters -->
         <div class="filters">
             <div class="dropdown">
                 <button class="dropbtn">Filter</button>
                 <div class="dropdown-content">
-                    <a href="#" id="all">All</a>
-                    <a href="#" id="rem">Uncomplete</a>
-                    <a href="#" id="com">Completed</a>
+                <a href="#" id="all">All</a>
+                <a href="#" id="rem">Pending</a>
+                <a href="#" id="com">Completed</a>
                 </div>
               </div>
 
@@ -50,13 +66,14 @@
                 <p>Completed: <span id="c-count">0</span></p>
             </div>
             <div class="remaining-task">
-                <p> <span id="total-tasks">Total Tasks: <span id="tasks-counter">0</span></span> </p> 
+                <p>Total Tasks: <span id="r-count">0</span></p>
             </div>
         </div>
-        
-        
     </div>
-    <!-- link for external css -->
-    <script src="script.js"></script>
+
+  
+    <!-- JS -->
+    <script src="index.js"></script>
+  
 </body>
 </html>
