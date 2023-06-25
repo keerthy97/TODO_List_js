@@ -9,11 +9,11 @@
 }
 
 :root {
-    --color-primary: #5a78ff;
-    --color-secondary: #0957ff;
+    --color-primary: #3454e2;
+    --color-secondary: #0957ff; 
 }
 
-body{
+body{ 
     position: relative;
     height: 100vh;
     display: flex;
@@ -31,8 +31,8 @@ body{
     margin: 0 400px;
     min-width: 500px;
     max-width: 1000px;
-    background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+    background: rgba(166, 149, 230, 0.292);
+    box-shadow: 0 8px 32px 0 rgba(12, 8, 245, 0.899);
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 3px );
     border-radius: 10px;
@@ -53,8 +53,9 @@ body{
 header h1 {
     font-size: 30px;
     font-weight: 700;
+    font-stretch: expanded;
     margin-bottom: 10px;
-    color: rgb(68, 68, 68);
+    color: rgb(97, 114, 215);
 }
 
 
@@ -129,7 +130,7 @@ header .input-section {
 }
 
 .todo-item{
-      background-color: beige;
+      background-color: rgba(166, 149, 230, 0.292);
       border-radius: 10px;
       margin-bottom: 5px;
 }
@@ -189,18 +190,18 @@ header .input-section {
 }
 
 .btn:hover{
-    background-color: rgb(108, 109, 110);
+    background-color: rgb(70, 29, 203);
     color: white;
 }
 
 
 .btn-add{
-    background-color: rgb(255, 221, 0);
+    background-color: rgba(20, 158, 36, 0.833);
     color: white
 }
 .btn-add:hover{
     background-color: white;
-    color:rgb(255, 221, 0);
+    color:rgba(34, 140, 16, 0.659);
 }
 
 .btn-success{
@@ -243,7 +244,7 @@ dropdown*/
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.899);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
