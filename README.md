@@ -1,9 +1,7 @@
 # Hosted Link: https://keerthy97.github.io/TODO_List_js/
-# Todo-List
-A TODO list made with HTML, CSS, and JavaScript is a basic tool for organizing tasks. Users can add, delete, and mark tasks as complete. The interface includes a form for inputting tasks and a list for displaying them. JavaScript adds functionality like updating task status and filtering tasks.
-# Todo List Project
 
-This project is a simple todo list application that allows users to add, complete, and delete tasks.
+# Todo-List
+This project is a simple todo list application that allows users to add, complete, and delete tasks. A TODO list made with HTML, CSS, and JavaScript is a basic tool for organizing tasks. Users can add, delete, and mark tasks as complete. The interface includes a form for inputting tasks and a list for displaying them. JavaScript adds functionality like updating task status and filtering tasks.
 
 ## Technologies Used
 
